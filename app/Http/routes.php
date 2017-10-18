@@ -28,4 +28,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function(
 	Route::get('tickets', 'TicketsController@index');
 	Route::post('close_ticket/{ticket_id}', 'TicketsController@close');
 });
+
 Route::post('comment', 'CommentsController@postComment');

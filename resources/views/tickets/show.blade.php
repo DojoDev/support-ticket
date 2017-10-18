@@ -49,11 +49,7 @@
                             </div>
                         </form>
                 </div>
-            </div>
-        </div>
-
-    </div>
-    <hr>
+                <hr>
     <div class="comments">
     @foreach ($comments as $comment)
         <div class="panel panel-@if($ticket->user->id === $comment->user_id) {{"default"}}@else{{"success"}}@endif">
@@ -68,4 +64,9 @@
         </div>
     @endforeach
 </div>
+            </div>
+        </div>
+
+    </div>
+
 @endsection
